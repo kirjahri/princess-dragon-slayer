@@ -24,6 +24,10 @@ Music="*res://scenes/music.tscn"
 gdscript/warnings/untyped_declaration=1
 gdscript/warnings/inferred_declaration=1
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 move_left={
