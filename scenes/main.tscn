@@ -220,6 +220,7 @@ _data = {
 script = ExtResource("1_tipki")
 
 [node name="Player" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(-39, 31)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(1, -8)
