@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c56ks7axfrvfv" path="res://scenes/kill_zone.tscn" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://8ta6ut88b44b" path="res://scenes/slime.tscn" id="6_tefeu"]
 [ext_resource type="FontFile" uid="uid://cju2kd1618wgt" path="res://assets/fonts/PixelOperator8.ttf" id="7_o6xl0"]
-[ext_resource type="FontFile" uid="uid://ct5uxknwv0x6a" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="9_85g3d"]
+[ext_resource type="PackedScene" uid="uid://qcnlrblam8mj" path="res://scenes/gui.tscn" id="9_85g3d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
 texture = ExtResource("2_0wfyh")
@@ -339,15 +339,7 @@ text = "You made it!"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="ScoreLabel" type="Label" parent="Labels"]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource("9_85g3d")]
 unique_name_in_owner = true
-offset_left = 474.0
-offset_top = -181.0
-offset_right = 624.0
-offset_bottom = -151.0
-theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
-theme_override_fonts/font = ExtResource("9_85g3d")
-theme_override_font_sizes/font_size = 8
-text = "You collected 0 coins."
-horizontal_alignment = 1
-autowrap_mode = 2

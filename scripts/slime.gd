@@ -9,17 +9,6 @@ var direction: int = 1
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 
-func _ready() -> void:
-	if ray_cast_left == null:
-		push_error("'RayCastLeft' was not found on '%s'" % self.name)
-
-	if ray_cast_right == null:
-		push_error("'RayCastRight' was not found on '%s'" % self.name)
-
-	if sprite == null:
-		push_error("'AnimatedSprite2D' was not found on '%s'" % self.name)
-
-
 func _process(delta: float) -> void:
 	if ray_cast_left.is_colliding():
 		direction = 1
